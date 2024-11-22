@@ -15,206 +15,202 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
-  <style>
-   
+<style>
+  body {
+    background-color: #FFFDF7;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-gap: 10px;  
+  }
 
-    body {
-      background-color: #FFFDF7; 
-      margin: 0;
-      width: 100%; 
-      height: 100vh;
-      padding: 20px;
-    }
-    
-    h1 {
-      color: black;
-      font-size: 250px; 
-      font-family: 'League Gothic', sans-serif; 
-      margin: 0;
-      line-height: 1;
-      letter-spacing: 1; 
-    }
-    
-   
-    
-    p {
-      color: black;
-      font-family: 'Noto Sans', sans-serif; 
-    }
-    
-    .onLeftSide {
-      width: 45%;
-      float: left;
-      position: relative; 
-    }
-    
-    .onRightSide {
-      width: 50%;
-      float: right;
-      position: relative; 
-      padding: 20px;
-    }
-  
-    .blacktext {
-      margin-left: 215px; 
-      margin-top: 90px;
-      display: block; 
-    }
-    
-     .numberheaderintro {
-      font-family: 'League Gothic', sans-serif;
-      color: #595757; 
-      font-size: 45px; 
-      margin-top: 50px; 
-      margin-left: 135px;
-      letter-spacing: 4px; 
-    }
-    
-     .numberheader {
-      font-family: 'League Gothic', sans-serif;
-      color: grey; 
-      font-size: 45px; 
-      margin-top: 190px; 
-      margin-left: 150px;
-      letter-spacing: 4px; 
-    }
+  h1 {
+    color: black;
+    font-size: 250px;
+    font-family: 'League Gothic', sans-serif;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 1;
+  }
 
-   .descriptionheaderintro {
-      font-family: 'League Gothic', sans-serif;
-      color: #595757;
-      font-size: 75px;
-      margin-top: 90px;
-      margin-left: 135px;
-      letter-spacing: 4.5px; 
-    }
-    
-    .descriptionheaderwork {
-      font-family: 'League Gothic', sans-serif;
-      color: black;
-      font-size: 60px;
-      margin-left: 150px;
-      margin-top: 5px; 
-      letter-spacing: 4px; 
-    }
+  p {
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+  }
 
-    .bodytext {
-       font-family: 'Noto Sans', sans-serif;
-      color: black;
-      font-size: 15px; 
-      margin-left: 150px;
-      margin-top: 25px; 
-      word-spacing: 3px; 
-      letter-spacing: 0.5px; 
-      line-height: 25px;
-    }
-    
-    .back-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      font-size: 30px;
-      color: black;
-      background-color: #FFFDF7;
-      border: 2px solid black;
-      padding: 10px;
-      text-align: center;
-      text-decoration: none;
-    }
+  .onLeftSide, .onRightSide {
+    position: relative;
+    display: block;
+  }
 
-    .back-to-top:hover {
-      background-color: #f0f0f0;
-    }
-    
-      
-    #blackline1 {
-      width: 8px;
-      height: 450px;
-      background-color: black; 
-      position: absolute;
-      top: 120px; 
-      right: -95px; 
-    }
-    
-  
-    #wetpet{
-      width: 80%;
-      height: auto;
-      margin-left: 35px; 
-      margin-top: 215px; 
-    }
-    
-    a{
-      color: black;
-      text-decoration: none; 
-    }
-    
-    a:hover{
-      color: #808080;
-    }
-    
-    
-    #resumeimg{
-      width: 90%;
-      height: auto;
-      margin-top: 300px; 
-      margin-left: 150px; 
-    }
-    
-    #heropageimg {
-  width: 75%;
-  height: auto;
-  margin-top: 250px;
-    
-} 
-    #centered{
-      width: 90%; 
-       margin-left: 250px
-    }
-    
-    #magazineimg{
-      width: 90%;
-      height: auto;
-      margin-left: 15px; 
-      margin-top: 215px; 
-      margin-bottom: 200px;
-    }
- 
-    header {
-  width: 100%;
-  position: fixed; 
-  top: 0;
-  left: 0;
-  z-index: 1000; 
-  text-align: center;
-  padding: 20px 0;
-  background-color: rgba(255, 253, 247, 0.9); 
-}
+  .onLeftSide {
+    grid-column: 1;  
+  }
 
-    nav ul {
-      margin: 0;
-      padding: 0;
-      list-style: none; 
-    }
+  .onRightSide {
+    grid-column: 2;  
+  }
 
-    nav li {
-      display: inline-block; 
-      margin-right: 20px; 
-    }
+  .blacktext {
+    margin-left: 215px;
+    margin-top: 90px;
+    display: block;
+  }
 
-    nav a {
-      color: black;
-      text-decoration: none;
-      font-family: 'Noto Sans', sans-serif;
-      display: block;
-      text-align: center;
-    }
+  .numberheaderintro {
+    font-family: 'League Gothic', sans-serif;
+    color: #595757;
+    font-size: 45px;
+    margin-top: 50px;
+    margin-left: 135px;
+    letter-spacing: 4px;
+  }
 
-    nav a:hover,
-    nav a:active {
-      color: #808080; 
-    }
+  .numberheader {
+    font-family: 'League Gothic', sans-serif;
+    color: grey;
+    font-size: 45px;
+    margin-top: 190px;
+    margin-left: 150px;
+    letter-spacing: 4px;
+  }
 
-  </style>
+  .descriptionheaderintro {
+    font-family: 'League Gothic', sans-serif;
+    color: #595757;
+    font-size: 75px;
+    margin-top: 90px;
+    margin-left: 135px;
+    letter-spacing: 4.5px;
+  }
+
+  .descriptionheaderwork {
+    font-family: 'League Gothic', sans-serif;
+    color: black;
+    font-size: 60px;
+    margin-left: 150px;
+    margin-top: 5px;
+    letter-spacing: 4px;
+  }
+
+  .bodytext {
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    font-size: 15px;
+    margin-left: 150px;
+    margin-top: 25px;
+    word-spacing: 3px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: black;
+    background-color: #FFFDF7;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .back-to-top:hover {
+    background-color: #f0f0f0;
+  }
+
+  #blackline1 {
+    width: 8px;
+    height: 450px;
+    background-color: black;
+    position: absolute;
+    top: 120px;
+    right: -95px;
+  }
+
+  #wetpet {
+    width: 80%;
+    height: auto;
+    margin-left: 35px;
+    margin-top: 215px;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #808080;
+  }
+
+  #resumeimg {
+    width: 90%;
+    height: auto;
+    margin-top: 300px;
+    margin-left: 150px;
+  }
+
+  #heropageimg {
+    width: 75%;
+    height: auto;
+    margin-top: -325px;
+    margin-bottom: 100px; 
+  }
+
+  #centered {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  #magazineimg {
+    width: 90%;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 215px;
+    margin-bottom: 200px;
+  }
+
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(255, 253, 247, 0.9);
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  nav a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    display: block;
+    text-align: center;
+  }
+
+  nav a:hover,
+  nav a:active {
+    color: #808080;
+  }
+</style>
 </head>
 <body>
   
@@ -292,26 +288,13 @@ REBRAND
    
   </div>
     
-  <div id="centered">
-
-  <!-- hero page image -->
-    
-  <img src="heropage.png" alt="heropage image" id="heropageimg">
-  
-    <h1 class="numberheader" style="margin-left: 0px; margin-top: 25px;">03 <span class="descriptionheaderwork" style="margin-left: 15px"> ANIMAL CROSSING 3D DESIGN </span></h1>
-    
-  <p class="bodytext" style="margin-left: 0px; margin-top: 25px;">
-      This project was completed out of personal interest and was inspired by one of my favourite games, Animal Crossing on the <br>Nintendo Switch. For my Grade 12 design class, we were instructed to create a hero page for a favourite company, and I chose to <br> focus on Animal Crossing. This 3D vector design allowed me to explore new design skills, such as 3D modelling, while ensuring <br>my work aligned with an existing brand identity. Through this project, I gained valuable experience in balancing creativity with <br>brand consistency.
-    </p>
-    </div>
-  
   <div class="onRightSide" style="margin-right: 20px;">
   <img src="magazine.png" alt="Magazine image" id="magazineimg">
-</div>
+  </div>
   
   <div class="onLeftSide">
     
-    <h1 class="numberheader" style="margin-top: 250px">04</h1>
+    <h1 class="numberheader" style="margin-left: 150px; margin-top: -650px">04</h1>
       
     <h1 class="descriptionheaderwork">
      GBDA 101 FINAL
@@ -324,10 +307,34 @@ MAGAZINE DESIGN
     
   </div>
   
+  
+  <div class="onRightSide2">
+     
+ <h1 class="numberheader" style="margin-left: 50px; margin-top: 15px">04</h1>
+      
+    <h1 class="descriptionheaderwork" style="margin-left: 50px">
+    ANIMAL CROSSING 3D DESIGN
+   
+    </h1>
+    
+     <p class="bodytext" style="margin-left: 50px" >
+       This project was completed during the winter semester of my first year at university in 2024. The goal was to create a magazine that collectively showcased the previous projects completed throughout GBDA 101. These projects included logo design, diptych posters, and an emotional object. The magazine highlights my skills in design and Illustrator, presenting a cohesive and visually engaging layout. It demonstrates my ability to merge creativity and technical proficiency, ensuring a polished final product that reflects my growth as a designer. 
+    </p>
+  
+  </div>
+  
+  <div class="onLeftSide">
+    
+    <img src="heropage.png" alt="heropage image" id="heropageimg" style="margin-left:150px; margin-bottom: 100px">
+  </div>
+  
+   
    <a href="#top" class="back-to-top">↑</a> 
 
 </body>
 </html>
+
+
 
 
 
